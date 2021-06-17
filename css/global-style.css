@@ -1,0 +1,251 @@
+:root {
+  --content-text-color: #757575;
+  --primary-text-color: #212121;
+  --secondary-text-color: #ffffff;
+
+  --accent-color-text: #2196f3;
+
+  --logo-accent-color: #2196f3;
+  --address-text-color: #757575;
+  --current-text-color: #2196f3;
+
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+
+  --provisional-bg-color: #2f303a;
+
+  --button-bg-color: #2196f3;
+  --button-text-color: #ffffff;
+
+  --footer-logo-color: #ffffff;
+  --footer-content-color: rgba(255, 255, 255, 0.6);
+
+  --primary-fonts-family: 'Roboto', sans-serif;
+  --secondary-font-family: 'Raleway', sans-serif;
+}
+
+/* COMMON STYLE */
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* ========== COMMON CLASSES ========== */
+.section {
+  padding: 94px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.no-padding-top {
+  padding-top: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  display: inline-block;
+  min-width: 200px;
+
+  padding: 10px 32px;
+
+  color: var(--button-text-color);
+  background: var(--button-bg-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--button-bg-color);
+  background-color: var(--button-text-color);
+}
+/* ========== END COMMON CLASSES ========== */
+
+/* ========== HEADER ========== */
+.navigation {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.header .logo {
+  display: inline-block;
+  padding: 24px 0px;
+}
+.logo-title {
+  color: var(--primary-text-color);
+
+  font-family: var(--secondary-font-family);
+  font-size: 26px;
+}
+
+.logo-element {
+  color: var(--logo-accent-color);
+}
+.menu__list {
+  margin-left: 93px;
+}
+
+.menu__list,
+.social__list {
+  margin-right: -50px;
+}
+
+.menu__list-item,
+.social__list-item {
+  margin-right: 50px;
+}
+
+.menu__list-link {
+  color: var(--primary-text-color);
+  cursor: pointer;
+}
+
+.menu__list-link:hover,
+.menu__list-link:focus,
+.header .social__list-link:hover,
+.header .social__list-link:focus {
+  color: var(--accent-color-text);
+}
+
+.menu__list-link,
+.header .social__list-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 32px 0px;
+}
+
+.header .social__list-link svg {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.social__list {
+  margin-left: auto;
+}
+.social__list-link {
+  color: var(--address-text-color);
+}
+
+.current {
+  color: var(--current-text-color);
+}
+/* ========== END HEADER ========== */
+
+/* ========== FOOTER ==========*/
+.footer {
+  padding: 60px 15px;
+  background-color: var(--provisional-bg-color);
+}
+
+.footer section {
+  align-items: flex-start;
+}
+
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer .address {
+  color: var(--footer-content-color);
+  font-style: normal;
+  line-height: 1.7;
+}
+
+.address__social-list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.dark-theme {
+  color: var(--footer-logo-color);
+}
+
+.footer-social b {
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.42;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-social {
+  margin-left: 70px;
+}
+
+.footer-social .masters__social-link {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social .masters__social-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer-social .masters__list-social {
+  margin-top: 20px;
+}
+/* ========== END FOOTER ==========*/

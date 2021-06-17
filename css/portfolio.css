@@ -1,0 +1,115 @@
+:root {
+  --content-text-color: #757575;
+  --primary-text-color: #212121;
+  --secondary-text-color: #ffffff;
+
+  --accent-bg-color: #2196f3;
+
+  /* --logo-accent-color: #2196f3; */
+  /* --address-text-color: #757575; */
+  /* --current-text-color: #2196f3; */
+
+  /* --primary-bg-color: #ffffff; */
+  /* --secondary-bg-color: #f5f4fa; */
+
+  /* --provisional-bg-color: #2f303a; */
+
+  /* --button-bg-color: #2196f3; */
+  --secondary-bt-bg-color: #f5f4fa;
+  /* --button-text-color: #ffffff; */
+
+  /* --footer-logo-color: #ffffff; */
+  /* --footer-content-color: rgba(255, 255, 255, 0.6); */
+}
+
+/* ============== FILTERS ============== */
+.filter__list {
+  margin-bottom: 56px;
+  margin-right: -8px;
+  justify-content: center;
+}
+.filter__list-item {
+  margin-right: 8px;
+}
+
+.filter__list .button {
+  padding: 6px 22px;
+  min-width: 73px;
+
+  color: var(--primary-text-color);
+  background: var(--secondary-bt-bg-color);
+}
+
+.filter__list .button:hover,
+.filter__list .button:focus {
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color-text);
+}
+/* ============== END FILTERS ============== */
+
+/* ============== EXAMPLES-LIST ============== */
+.examples__list {
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.examples__list-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.examples__list-item:hover,
+.examples__list-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.examples__list-name {
+  margin-bottom: 4px;
+  color: var(--primary-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.examples__list-type {
+  color: var(--content-text-color);
+
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.examples__list-info {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: transparent;
+}
+/* ============== END FILTERS ============== */
+
+/* ============== FOOTER ============== */
+.masters__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  color: #afb1b8;
+}
+
+.link-icon {
+  fill: currentColor;
+}
+
+.masters__social-link:hover {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+/* ============== END FOOTER ============== */

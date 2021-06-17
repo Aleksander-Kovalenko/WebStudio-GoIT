@@ -1,0 +1,215 @@
+:root {
+  --content-text-color: #757575;
+  --primary-text-color: #212121;
+  --secondary-text-color: #ffffff;
+
+  --accent-color-text: #2196f3;
+
+  --logo-accent-color: #2196f3;
+  --address-text-color: #757575;
+  --current-text-color: #2196f3;
+
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+
+  --provisional-bg-color: #2f303a;
+
+  --button-bg-color: #2196f3;
+  --button-text-color: #ffffff;
+
+  --footer-logo-color: #ffffff;
+  --footer-content-color: rgba(255, 255, 255, 0.6);
+}
+
+/* ========== HEADER ========== */
+/* global-style.css */
+
+/* ========== END HEADER ========== */
+
+/* MAIN */
+
+/* ========== HERO ==========*/
+.hero {
+  padding: 200px 0;
+
+  text-align: center;
+
+  color: var(--secondary-text-color);
+  background-color: var(--provisional-bg-color);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/background/hero.jpg);
+}
+
+.hero__title {
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+
+  text-transform: uppercase;
+}
+/* ========== END HERO ==========*/
+
+/* ========== ADVANTAGES ========== */
+.advantages__list {
+  margin-right: -30px;
+}
+
+.advantages__list-item,
+.masters__list-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-right: 30px;
+}
+
+.advantages__item-wrapper {
+  display: flex;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.advantages__list-subtitle {
+  margin-bottom: 10px;
+  color: var(--primary-text-color);
+
+  font-weight: 700;
+  line-height: 1.1;
+
+  text-transform: uppercase;
+}
+
+.advantages__list-des {
+  color: var(--content-text-color);
+
+  line-height: 1.7;
+}
+
+/* ========== END ADVANTAGES ========== */
+
+/* ========== TEAM WORK ========== */
+.section-title {
+  margin-bottom: 50px;
+
+  color: var(--primary-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.works__list {
+  margin-right: -30px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.works__list-item {
+  margin-right: 30px;
+}
+
+/* ========== END TEAM WORK ========== */
+
+/* ========== MASTERS ========== */
+.masters {
+  background-color: var(--secondary-bg-color);
+}
+
+.masters__list {
+  margin-right: -30px;
+}
+
+.masters__list-item {
+  padding-bottom: 30px;
+  text-align: center;
+
+  background: var(--primary-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.masters__list-wrapper {
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+
+.masters__list-name {
+  margin-bottom: 10px;
+}
+
+.masters__list-position {
+  color: var(--content-text-color);
+}
+
+.masters__list-box {
+  padding: 0 32px;
+}
+
+.masters__list-social {
+  justify-content: space-between;
+}
+
+.masters__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  color: #afb1b8;
+}
+
+.link-icon {
+  fill: currentColor;
+}
+
+.masters__social-link:hover {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+/* ========== END MASTERS ========== */
+
+/* ========== CLIENTS ==========  */
+.clients__list {
+  margin-right: -30px;
+}
+.clients__list-item {
+  margin-right: 30px;
+}
+.clients__list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-icon {
+  fill: currentColor;
+}
+
+.clients__list-link:hover {
+  color: #2196f3;
+  border-color: #2196f3;
+}
+
+/* ========== END CLIENTS ========== */
+/* ========== END MAIN ==========*/
