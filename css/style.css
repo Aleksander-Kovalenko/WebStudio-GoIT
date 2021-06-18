@@ -142,7 +142,8 @@
 
 .masters__list-wrapper {
   margin-top: 30px;
-  margin-bottom: 16px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 
 .masters__list-name {
@@ -153,11 +154,8 @@
   color: var(--content-text-color);
 }
 
-.masters__list-box {
-  padding: 0 32px;
-}
-
 .masters__list-social {
+  margin-top: 16px;
   justify-content: space-between;
 }
 
@@ -188,9 +186,11 @@
 .clients__list {
   margin-right: -30px;
 }
+
 .clients__list-item {
   margin-right: 30px;
 }
+
 .clients__list-link {
   display: flex;
   align-items: center;

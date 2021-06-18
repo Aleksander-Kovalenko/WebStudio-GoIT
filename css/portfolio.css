@@ -92,24 +92,5 @@
 /* ============== END FILTERS ============== */
 
 /* ============== FOOTER ============== */
-.masters__social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  width: 44px;
-  height: 44px;
-
-  border-radius: 50%;
-  color: #afb1b8;
-}
-
-.link-icon {
-  fill: currentColor;
-}
-
-.masters__social-link:hover {
-  color: #ffffff;
-  background-color: #2196f3;
-}
 /* ============== END FOOTER ============== */
