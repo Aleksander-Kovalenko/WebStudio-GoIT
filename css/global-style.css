@@ -201,7 +201,7 @@ p {
   background-color: var(--provisional-bg-color);
 }
 
-.footer section {
+.footer {
   align-items: flex-start;
 }
 
@@ -235,10 +235,6 @@ p {
 .footer__social {
   margin-left: 70px;
 }
-
-/* .footer-social .footer__social-link {
-  color: #ffffff;
-} */
 
 .footer__social .footer__social-item:not(:last-child) {
   margin-right: 20px;
