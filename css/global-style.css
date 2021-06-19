@@ -178,7 +178,7 @@ p {
   padding: 32px 0px;
 }
 
-.header .social__list-link svg {
+.header__social-icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -262,7 +262,8 @@ p {
   fill: currentColor;
 }
 
-.footer__social-link:hover {
-  background-color: #2196f3;
+.footer__social-link:hover,
+.footer__social-link:focus {
+  background-color: var(--accent-color-text);
 }
 /* ========== END FOOTER ==========*/
