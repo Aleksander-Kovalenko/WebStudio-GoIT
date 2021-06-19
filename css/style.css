@@ -10,6 +10,7 @@
   --current-text-color: #2196f3;
 
   --primary-bg-color: #ffffff;
+  --primary-bg-accent-color: 2196f3;
   --secondary-bg-color: #f5f4fa;
 
   --provisional-bg-color: #2f303a;
@@ -181,8 +182,8 @@
 
 .masters__social-link:hover,
 .masters__social-link:focus {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--secondary-text-color);
+  background-color: var(--primary-bg-accent-color);
 }
 
 /* ========== END MASTERS ========== */
