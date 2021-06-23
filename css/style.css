@@ -183,7 +183,7 @@
 .masters__social-link:hover,
 .masters__social-link:focus {
   color: var(--secondary-text-color);
-  background-color: var(--primary-bg-accent-color);
+  background-color: var(--accent-color-text);
 }
 
 /* ========== END MASTERS ========== */
