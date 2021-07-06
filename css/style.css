@@ -25,6 +25,8 @@
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
   --primary-margin: 30px;
+
+  --type-animation: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ========== HEADER ========== */
@@ -74,13 +76,9 @@
 }
 
 .advantages__item-wrapper {
-  display: flex;
   margin-bottom: var(--primary-margin);
   width: 270px;
   height: 120px;
-
-  align-items: center;
-  justify-content: center;
 
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -187,15 +185,14 @@
 }
 
 .masters__social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   width: 44px;
   height: 44px;
 
   border-radius: 50%;
   color: #afb1b8;
+
+  transition: color 250ms var(--type-animation),
+    background-color 250ms var(--type-animation);
 }
 
 .link-icon {
@@ -216,18 +213,18 @@
 }
 
 .clients__list-item {
-  margin-right: calc(var(--primary-margin) * -1);
+  margin-right: var(--primary-margin);
 }
 
 .clients__list-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 170px;
   height: 90px;
   color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  transition: border-color 250ms var(--type-animation),
+    color 250ms var(--type-animation);
 }
 
 .clients-icon {

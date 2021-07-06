@@ -31,6 +31,9 @@
 
   color: var(--primary-text-color);
   background: var(--secondary-bt-bg-color);
+
+  transition: color 250ms var(--type-animation),
+    background-color 250ms var(--type-animation);
 }
 
 .filter__list .button:hover,
@@ -53,6 +56,8 @@
   margin-right: var(--primary-margin);
   margin-bottom: var(--primary-margin);
   cursor: pointer;
+
+  transition: box-shadow 250ms var(--type-animation);
 }
 
 .examples__list-item:hover,
@@ -80,7 +85,7 @@
 
   letter-spacing: 0.03em;
   background-color: rgba(33, 150, 243, 0.9);
-  transition: 250ms var(--type-animation);
+  transition: transform 250ms var(--type-animation);
 }
 
 .examples__list-thumb:hover .examples__img-des {
