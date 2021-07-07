@@ -348,6 +348,7 @@ p {
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   transition: fill 250ms var(--type-animation);
+  cursor: pointer;
 }
 
 .btn-close:hover {
