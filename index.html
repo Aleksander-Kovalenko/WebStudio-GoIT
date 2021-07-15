@@ -685,37 +685,55 @@
         <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
         <form>
           <div class="modal__form-field">
-            <label for="" class="modal__form-label">
+            <label for="name" class="modal__form-label">
               Имя
               <svg width="12" height="12">
                 <use href="./images/icon/sprite.svg#icon-form-name"></use>
               </svg>
             </label>
-            <input type="text" />
+            <input type="text" id="name" />
           </div>
+
           <div class="modal__form-field">
-            <label for="" class="modal__form-label">
+            <label for="tell" class="modal__form-label">
               Телефон
               <svg width="13" height="13">
                 <use href="./images/icon/sprite.svg#icon-form-tel"></use>
               </svg>
             </label>
-            <input type="text" />
+            <input type="text" id="tell" />
           </div>
+
           <div class="modal__form-field">
-            <label for="" class="modal__form-label">
+            <label for="mail" class="modal__form-label">
               Почта
               <svg width="15" height="12">
                 <use href="./images/icon/sprite.svg#icon-form-post"></use>
               </svg>
             </label>
-            <input type="text" />
+            <input type="text" id="mail" />
           </div>
+
           <div class="modal__form-field">
-            <label for="" class="modal__form-label">Комментарий</label>
-            <input type="text" />
+            <label for="comit" class="modal__form-label">Комментарий</label>
+            <textarea
+              name=""
+              id="comit"
+              cols="30"
+              rows="10"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+
+          <div class="modal__form-solution">
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="#">Условия договора</a></label
+            >
           </div>
         </form>
+
         <button
           class="btn-close flex"
           type="button"
@@ -726,6 +744,8 @@
             <use href="./images/icon/sprite.svg#close-modal"></use>
           </svg>
         </button>
+
+        <button class="button" type="submit">Отправить</button>
       </div>
     </div>
     <!-- ======= END BACKDROP ======= -->
