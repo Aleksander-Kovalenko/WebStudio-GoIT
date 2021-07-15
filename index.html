@@ -46,7 +46,7 @@
         <ul class="social__list flex">
           <li class="social__list-item">
             <a
-              class="social__list-link"
+              class="social__list-link flex"
               href="mailto:info@devstudio.com"
               aria-label="info@devstudio.com"
             >
@@ -59,7 +59,7 @@
 
           <li class="social__list-item">
             <a
-              class="social__list-link"
+              class="social__list-link flex"
               href="tel:+380961111111"
               aria-label="380961111111"
             >
@@ -653,6 +653,28 @@
             </li>
           </ul>
         </div>
+
+        <form class="form">
+          <div class="form__content">
+            <div class="form__content-field">
+              <label class="form__content-title" for="email"
+                >Подпишитесь на рассылку</label
+              >
+              <input
+                class="form__content-input-email"
+                type="text"
+                placeholder="E-mail"
+                id="email"
+              />
+            </div>
+            <button class="button flex" type="submit">
+              Подписаться
+              <svg class="icon-send" width="24" height="24">
+                <use href="./images/icon/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <!-- ======= END FOOTER ======= -->
