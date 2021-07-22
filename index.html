@@ -684,70 +684,68 @@
       <div class="modal">
         <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
         <form>
-          <div class="modal__form-field">
-            <svg width="18" height="18">
+          <label class="modal__form-field">
+            <svg class="modal__form-icon" width="18" height="18">
               <use href="./images/icon/sprite.svg#icon-form-name"></use>
             </svg>
+
             <input
               class="modal__form-input"
               type="text"
-              id="name"
               placeholder=" "
               autocomplete="off"
             />
-            <label for="name" class="modal__form-label"> Имя </label>
-          </div>
+            <span class="modal__form-label">Имя</span>
+          </label>
 
-          <div class="modal__form-field">
-            <svg width="18" height="18">
+          <label for="tell" class="modal__form-field">
+            <svg class="modal__form-icon" width="18" height="18">
               <use href="./images/icon/sprite.svg#icon-form-tel"></use>
             </svg>
             <input
               class="modal__form-input"
               type="tel"
-              id="tell"
               placeholder=" "
               autocomplete="off"
             />
-            <label for="tell" class="modal__form-label"> Телефон </label>
-          </div>
 
-          <div class="modal__form-field">
-            <svg width="18" height="18">
+            <span class="modal__form-label">Телефон</span>
+          </label>
+
+          <label class="modal__form-field">
+            <svg class="modal__form-icon" width="18" height="18">
               <use href="./images/icon/sprite.svg#icon-form-post"></use>
             </svg>
             <input
               class="modal__form-input"
               type="email"
-              id="mail"
               placeholder=" "
               autocomplete="off"
             />
-            <label for="mail" class="modal__form-label"> Почта </label>
-          </div>
+            <span class="modal__form-label">Почта</span>
+          </label>
 
-          <div class="modal__form-field">
-            <label for="comit" class="modal__form-label-textarea"
-              >Комментарий</label
-            >
+          <label class="modal__form-field">
+            <span class="modal__form-textarea-title">Комментарий</span>
             <textarea
               class="modal__form-textarea"
               name=""
-              id="comit"
               cols="30"
               rows="10"
               placeholder="Введите текст"
             ></textarea>
-          </div>
+          </label>
 
-          <div class="modal__form-solution">
-            <input class="checkbox" type="checkbox" id="checkbox" />
+          <!-- <div class="modal__form-solution"> -->
+
+          <label class="modal__form-solution">
+            <input class="checkbox" type="checkbox" />
             <span class="user-checkbox"></span>
-            <label for="checkbox"
+            <span class="modal__form-checkbox-text"
               >Соглашаюсь с рассылкой и принимаю
-              <a href="#">Условия договора</a></label
-            >
-          </div>
+              <a href="#">Условия договора</a>
+            </span>
+          </label>
         </form>
 
         <button
