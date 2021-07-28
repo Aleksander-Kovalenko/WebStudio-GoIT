@@ -53,6 +53,7 @@ li {
 }
 
 a {
+  color: currentColor;
   text-decoration: none;
 }
 h1,
@@ -133,26 +134,29 @@ p {
 
 /* ========== HEADER ========== */
 .header {
+  padding-top: 25px;
+  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
+
 .navigation {
   font-weight: 500;
   letter-spacing: 0.02em;
 }
-.header .logo {
-  display: inline-block;
-  padding: 24px 0px;
-}
-.logo-title {
-  color: var(--primary-text-color);
-
-  font-family: var(--secondary-font-family);
+.logo {
+  font-family: 'Raleway', sans-serif;
   font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: currentColor;
 }
 
-.logo-element {
+.logo__element {
   color: var(--logo-accent-color);
 }
+
 .menu__list {
   margin-left: 93px;
 }
@@ -162,13 +166,9 @@ p {
   margin-right: -50px;
 }
 
-.menu__list-item,
-.social__list-item {
-  margin-right: 50px;
-}
-
 .menu__list-item {
   position: relative;
+  margin-right: 50px;
 }
 
 .menu__list-link {
@@ -178,13 +178,14 @@ p {
 
   transition: color 250ms var(--type-animation);
 }
+
 .menu__list-link::before {
   content: '';
   position: absolute;
   width: 100%;
   height: 4px;
   left: 0;
-  top: 45px;
+  top: 46px;
 
   background: #2196f3;
   border-radius: 2px;
@@ -205,7 +206,15 @@ p {
   color: var(--accent-color-text);
 }
 
-.header__social-icon {
+.menu__list--active {
+  color: var(--current-text-color);
+}
+
+.menu__list--active::before {
+  opacity: 1;
+}
+
+.social__list-icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -213,48 +222,77 @@ p {
 .social__list {
   margin-left: auto;
 }
+
+.social__list-item {
+  margin-right: 50px;
+}
+
 .social__list-link {
   color: var(--address-text-color);
 }
 
-.current {
-  color: var(--current-text-color);
-}
-.current::before {
-  opacity: 1;
-}
 /* ========== END HEADER ========== */
 
-/* ========== FOOTER ==========*/
-.footer {
-  padding: 60px 15px;
+/*  Social-list TEAM MEMBERS and FOOTER*/
 
-  background-color: var(--provisional-bg-color);
+.social-list {
+  margin-top: 16px;
 }
 
-.footer .container {
+.social-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list__link {
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  /* color: #afb1b8; */
+
+  transition: color 250ms var(--type-animation),
+    background-color 250ms var(--type-animation);
+}
+
+.social-list__icon {
+  fill: currentColor;
+}
+
+.social-list__link:hover,
+.social-list__link:focus {
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color-text);
+}
+/* END TEAM MEMBERS Social-list */
+
+/* ========== FOOTER ==========*/
+
+.footer--container {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
 
-.footer .logo {
-  display: inline-block;
-  margin-bottom: 20px;
+.footer--link {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer .address {
+.footer {
+  padding: 60px 15px;
+  color: #ffffff;
+  background-color: var(--provisional-bg-color);
+}
+
+.address {
   color: var(--footer-content-color);
   font-style: normal;
-  line-height: 1.7;
+  line-height: 1.71;
+
+  margin-top: 20px;
 }
 
-.address__social-list-item:not(:last-child) {
+.address__list-item:not(:last-child) {
   margin-bottom: 9px;
-}
-
-.dark-theme {
-  color: var(--footer-logo-color);
 }
 
 .footer__social b {
@@ -265,10 +303,6 @@ p {
   text-transform: uppercase;
 }
 
-.footer__social {
-  /* margin-left: 70px; */
-}
-
 .footer__social .footer__social-item:not(:last-child) {
   margin-right: 20px;
 }
@@ -277,7 +311,7 @@ p {
   margin-top: 20px;
 }
 
-.footer__social-link {
+/* .footer__social-link {
   display: flex;
   align-items: center;
 
@@ -289,7 +323,7 @@ p {
 
   border-radius: 50%;
   transition: background-color 250ms var(--type-animation);
-}
+} */
 
 .footer__social-link-icon {
   fill: currentColor;
@@ -300,17 +334,16 @@ p {
   background-color: var(--accent-color-text);
 }
 
-.form {
-}
-
 .form__content {
   display: flex;
   align-items: flex-end;
 }
+
 .form__content-field {
   display: flex;
   flex-direction: column;
 }
+
 .form__content-title {
   margin-bottom: 20px;
 

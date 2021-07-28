@@ -23,14 +23,15 @@
       <h1 class="visually-hidden">WebStudio</h1>
       <div class="container flex">
         <nav class="navigation flex">
-          <a class="logo" href="./index.html"
-            ><h2 class="logo-title">
-              <span class="logo-element">Web</span>Studio
-            </h2></a
-          >
+          <h2 class="logo">
+            <a href="#"><span class="logo__element">Web</span>Studio</a>
+          </h2>
+
           <ul class="menu__list flex">
             <li class="menu__list-item">
-              <a class="menu__list-link current" href="./index.html">Студия</a>
+              <a class="menu__list-link menu__list--active" href="./index.html"
+                >Студия</a
+              >
             </li>
 
             <li class="menu__list-item">
@@ -50,7 +51,7 @@
               href="mailto:info@devstudio.com"
               aria-label="info@devstudio.com"
             >
-              <svg class="header__social-icon" width="16" height="12">
+              <svg class="social__list-icon" width="16" height="12">
                 <use href="./images/icon/sprite.svg#icon-envelope-header"></use>
               </svg>
               info@devstudio.com</a
@@ -63,7 +64,7 @@
               href="tel:+380961111111"
               aria-label="380961111111"
             >
-              <svg class="header__social-icon" width="10" height="16">
+              <svg class="social__list-icon" width="10" height="16">
                 <use href="./images/icon/sprite.svg#icon-tel-header"></use>
               </svg>
               +38 096 111 11 11</a
@@ -152,45 +153,45 @@
       <!-- ======= TEAM WORK ======= -->
       <section class="section no-padding-top">
         <div class="container">
-          <h2 class="section-title">Чем мы занимаемся</h2>
+          <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="works__list flex">
             <li class="works__list-item">
-              <article>
+              <article class="type__product">
                 <img
-                  class="works__list-img"
+                  class="type__product-img"
                   src="./images/work/FirstVariant.jpg"
                   alt="разработка под разные операциионные системы"
                   width="370"
                   height="295"
                 />
+                <h3 class="type__product-meta">Десктопные приложения</h3>
               </article>
-              <h3 class="works__list-des">Десктопные приложения</h3>
             </li>
 
             <li class="works__list-item">
-              <article>
+              <article class="type__product">
                 <img
-                  class="works__list-img"
+                  class="type__product-img"
                   src="./images/work/SecondVariant.jpg"
                   alt="разработка под мобильные платформы"
                   width="370"
                   height="295"
                 />
+                <h3 class="type__product-meta">Мобильные приложения</h3>
               </article>
-              <h3 class="works__list-des">Мобильные приложения</h3>
             </li>
 
             <li class="works__list-item">
-              <article>
+              <article class="type__product">
                 <img
-                  class="works__list-img"
+                  class="type__product-img"
                   src="./images/work/ThirdVariant.jpg"
                   alt="проектирование"
                   width="370"
                   height="295"
                 />
+                <h3 class="type__product-meta">Дизайнерские решения</h3>
               </article>
-              <h3 class="works__list-des">Дизайнерские решения</h3>
             </li>
           </ul>
         </div>
@@ -198,12 +199,12 @@
       <!-- ======= END TEAM WORK ======= -->
 
       <!-- ======= MASTERS ======= -->
-      <section class="section masters">
+      <section class="section teams">
         <div class="container">
-          <h2 class="section-title">Наша команда</h2>
-          <ul class="masters__list flex">
-            <li class="masters__list-item">
-              <div class="masters__list-thumb">
+          <h2 class="section__title">Наша команда</h2>
+          <ul class="team-members__card-set flex">
+            <li class="team-members__card-item">
+              <div class="masters__list-thumb-thumb">
                 <img
                   class="masters__list-img"
                   src="./images/team/igor.jpg"
@@ -212,70 +213,71 @@
                   height="260"
                 />
               </div>
-              <div class="masters__list-wrapper">
-                <p class="masters__list-name"><b>Игорь Демьяненко</b></p>
-                <p class="masters__list-position">Product Designer</p>
 
-                <ul class="masters__list-social flex">
-                  <li class="masters__social-item">
+              <div class="team-members__card-meta">
+                <p class="team-members__card-name"><b>Игорь Демьяненко</b></p>
+                <p class="team-members__card-position">Product Designer</p>
+
+                <ul class="social-list flex">
+                  <li class="social-list__item">
                     <a
-                      class="masters__social-link flex"
+                      class="social-list__link flex team-members--link"
                       href="https://www.instagram.com/"
                       aria-label="ссылка на профиль instagram"
                     >
-                      <svg class="link-icon" width="20" height="20">
+                      <svg class="social-list__icon" width="20" height="20">
                         <use
                           href="./images/icon/sprite.svg#icon-instagram"
                         ></use>
                       </svg>
                     </a>
                   </li>
-
-                  <li class="masters__social-item">
+                  <!-- twitter -->
+                  <li class="social-list__item">
                     <a
-                      class="masters__social-link flex"
-                      href="https://twitter.com/"
+                      class="social-list__link flex team-members--link"
+                      href="https://www.twitter.com/"
                       aria-label="ссылка на профиль twitter"
                     >
-                      <svg class="link-icon" width="20" height="20">
-                        <use
-                          href="./images/icon/sprite.svg#icon-twitter"
-                        ></use></svg
-                    ></a>
+                      <svg class="social-list__icon" width="20" height="20">
+                        <use href="./images/icon/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
                   </li>
-
-                  <li class="masters__social-item">
+                  <!-- facebook -->
+                  <li class="social-list__item">
                     <a
-                      class="masters__social-link flex"
+                      class="social-list__link flex team-members--link"
                       href="https://www.facebook.com/"
                       aria-label="ссылка на профиль facebook"
                     >
-                      <svg class="link-icon" width="20" height="20">
+                      <svg class="social-list__icon" width="20" height="20">
                         <use
                           href="./images/icon/sprite.svg#icon-facebook"
                         ></use>
                       </svg>
                     </a>
                   </li>
-
-                  <li class="masters__social-item">
+                  <!-- linkedin -->
+                  <li class="social-list__item">
                     <a
-                      class="masters__social-link flex"
-                      href="https://ru.linkedin.com/"
+                      class="social-list__link flex team-members--link"
+                      href="https://www.linkedin.com/"
                       aria-label="ссылка на профиль linkedin"
                     >
-                      <svg class="link-icon" width="20" height="20">
+                      <svg class="social-list__icon" width="20" height="20">
                         <use
                           href="./images/icon/sprite.svg#icon-linkedin"
-                        ></use></svg
-                    ></a>
+                        ></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
             </li>
 
-            <li class="masters__list-item">
-              <div class="masters__list-thumb">
+            <li class="team-members__card-item">
+              <div class="">
                 <img
                   class="masters__list-img"
                   src="./images/team/olga.jpg"
@@ -284,69 +286,71 @@
                   height="260"
                 />
               </div>
-              <div class="masters__list-wrapper">
-                <p class="masters__list-name"><b>Ольга Репина</b></p>
-                <p class="masters__list-position">Frontend Developer</p>
-                <ul class="masters__list-social flex">
-                  <li class="masters__social-item">
+
+              <div class="team-members__card-meta">
+                <p class="team-members__card-name"><b>Ольга Репина</b></p>
+                <p class="team-members__card-position">Frontend Developer</p>
+
+                <ul class="social-list flex">
+                  <li class="social-list__item">
                     <a
-                      class="masters__social-link flex"
+                      class="social-list__link flex team-members--link"
                       href="https://www.instagram.com/"
                       aria-label="ссылка на профиль instagram"
                     >
-                      <svg class="link-icon" width="20" height="20">
+                      <svg class="social-list__icon" width="20" height="20">
                         <use
                           href="./images/icon/sprite.svg#icon-instagram"
                         ></use>
                       </svg>
                     </a>
                   </li>
-
-                  <li class="masters__social-item">
+                  <!-- twitter -->
+                  <li class="social-list__item">
                     <a
-                      class="masters__social-link flex"
-                      href="https://twitter.com/"
+                      class="social-list__link flex team-members--link"
+                      href="https://www.twitter.com/"
                       aria-label="ссылка на профиль twitter"
                     >
-                      <svg class="link-icon" width="20" height="20">
-                        <use
-                          href="./images/icon/sprite.svg#icon-twitter"
-                        ></use></svg
-                    ></a>
+                      <svg class="social-list__icon" width="20" height="20">
+                        <use href="./images/icon/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
                   </li>
-
-                  <li class="masters__social-item">
+                  <!-- facebook -->
+                  <li class="social-list__item">
                     <a
-                      class="masters__social-link flex"
+                      class="social-list__link flex team-members--link"
                       href="https://www.facebook.com/"
                       aria-label="ссылка на профиль facebook"
                     >
-                      <svg class="link-icon" width="20" height="20">
+                      <svg class="social-list__icon" width="20" height="20">
                         <use
                           href="./images/icon/sprite.svg#icon-facebook"
                         ></use>
                       </svg>
                     </a>
                   </li>
-
-                  <li class="masters__social-item">
+                  <!-- linkedin -->
+                  <li class="social-list__item">
                     <a
-                      class="masters__social-link flex"
-                      href="https://ru.linkedin.com/"
+                      class="social-list__link flex team-members--link"
+                      href="https://www.linkedin.com/"
                       aria-label="ссылка на профиль linkedin"
                     >
-                      <svg class="link-icon" width="20" height="20">
+                      <svg class="social-list__icon" width="20" height="20">
                         <use
                           href="./images/icon/sprite.svg#icon-linkedin"
-                        ></use></svg
-                    ></a>
+                        ></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
             </li>
 
-            <li class="masters__list-item">
-              <div class="masters__list-thumb">
+            <li class="team-members__card-item">
+              <div class="">
                 <img
                   class="masters__list-img"
                   src="./images/team/nikolay.jpg"
@@ -355,69 +359,71 @@
                   height="260"
                 />
               </div>
-              <div class="masters__list-wrapper">
-                <p class="masters__list-name"><b>Николай Тарасов</b></p>
-                <p class="masters__list-position">Marketing</p>
-                <ul class="masters__list-social flex">
-                  <li class="masters__social-item">
+
+              <div class="team-members__card-meta">
+                <p class="team-members__card-name"><b>Николай Тарасов</b></p>
+                <p class="team-members__card-position">Marketing</p>
+
+                <ul class="social-list flex">
+                  <li class="social-list__item">
                     <a
-                      class="masters__social-link flex"
+                      class="social-list__link flex team-members--link"
                       href="https://www.instagram.com/"
                       aria-label="ссылка на профиль instagram"
                     >
-                      <svg class="link-icon" width="20" height="20">
+                      <svg class="social-list__icon" width="20" height="20">
                         <use
                           href="./images/icon/sprite.svg#icon-instagram"
                         ></use>
                       </svg>
                     </a>
                   </li>
-
-                  <li class="masters__social-item">
+                  <!-- twitter -->
+                  <li class="social-list__item">
                     <a
-                      class="masters__social-link flex"
-                      href="https://twitter.com/"
+                      class="social-list__link flex team-members--link"
+                      href="https://www.twitter.com/"
                       aria-label="ссылка на профиль twitter"
                     >
-                      <svg class="link-icon" width="20" height="20">
-                        <use
-                          href="./images/icon/sprite.svg#icon-twitter"
-                        ></use></svg
-                    ></a>
+                      <svg class="social-list__icon" width="20" height="20">
+                        <use href="./images/icon/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
                   </li>
-
-                  <li class="masters__social-item">
+                  <!-- facebook -->
+                  <li class="social-list__item">
                     <a
-                      class="masters__social-link flex"
+                      class="social-list__link flex team-members--link"
                       href="https://www.facebook.com/"
                       aria-label="ссылка на профиль facebook"
                     >
-                      <svg class="link-icon" width="20" height="20">
+                      <svg class="social-list__icon" width="20" height="20">
                         <use
                           href="./images/icon/sprite.svg#icon-facebook"
                         ></use>
                       </svg>
                     </a>
                   </li>
-
-                  <li class="masters__social-item">
+                  <!-- linkedin -->
+                  <li class="social-list__item">
                     <a
-                      class="masters__social-link flex"
-                      href="https://ru.linkedin.com/"
+                      class="social-list__link flex team-members--link"
+                      href="https://www.linkedin.com/"
                       aria-label="ссылка на профиль linkedin"
                     >
-                      <svg class="link-icon" width="20" height="20">
+                      <svg class="social-list__icon" width="20" height="20">
                         <use
                           href="./images/icon/sprite.svg#icon-linkedin"
-                        ></use></svg
-                    ></a>
+                        ></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
             </li>
 
-            <li class="masters__list-item">
-              <div class="masters__list-thumb">
+            <li class="team-members__card-item">
+              <div class="">
                 <img
                   class="masters__list-img"
                   src="./images/team/mihail.jpg"
@@ -426,57 +432,59 @@
                   height="260"
                 />
               </div>
-              <div class="masters__list-wrapper">
-                <p class="masters__list-name"><b>Михаил Ермаков</b></p>
-                <p class="masters__list-position">UI Designer</p>
-                <ul class="masters__list-social flex">
-                  <li class="masters__social-item">
+
+              <div class="team-members__card-meta">
+                <p class="team-members__card-name"><b>Михаил Ермаков</b></p>
+                <p class="team-members__card-position">UI Designer</p>
+
+                <ul class="social-list flex">
+                  <li class="social-list__item">
                     <a
-                      class="masters__social-link flex"
+                      class="social-list__link flex team-members--link"
                       href="https://www.instagram.com/"
-                      aria-label="ссылка на профиль Instagram"
+                      aria-label="ссылка на профиль instagram"
                     >
-                      <svg class="link-icon" width="20" height="20">
+                      <svg class="social-list__icon" width="20" height="20">
                         <use
                           href="./images/icon/sprite.svg#icon-instagram"
                         ></use>
                       </svg>
                     </a>
                   </li>
-
-                  <li class="masters__social-item">
+                  <!-- twitter -->
+                  <li class="social-list__item">
                     <a
-                      class="masters__social-link flex"
-                      href="https://twitter.com/"
-                      aria-label="ссылка на профиль Twitter"
+                      class="social-list__link flex team-members--link"
+                      href="https://www.twitter.com/"
+                      aria-label="ссылка на профиль twitter"
                     >
-                      <svg class="link-icon" width="20" height="20">
+                      <svg class="social-list__icon" width="20" height="20">
                         <use href="./images/icon/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-
-                  <li class="masters__social-item">
+                  <!-- facebook -->
+                  <li class="social-list__item">
                     <a
-                      class="masters__social-link flex"
+                      class="social-list__link flex team-members--link"
                       href="https://www.facebook.com/"
-                      aria-label="ссылка на профиль Facebook"
+                      aria-label="ссылка на профиль facebook"
                     >
-                      <svg class="link-icon" width="20" height="20">
+                      <svg class="social-list__icon" width="20" height="20">
                         <use
                           href="./images/icon/sprite.svg#icon-facebook"
                         ></use>
                       </svg>
                     </a>
                   </li>
-
-                  <li class="masters__social-item">
+                  <!-- linkedin -->
+                  <li class="social-list__item">
                     <a
-                      class="masters__social-link flex"
-                      href="https://ru.linkedin.com/"
+                      class="social-list__link flex team-members--link"
+                      href="https://www.linkedin.com/"
                       aria-label="ссылка на профиль linkedin"
                     >
-                      <svg class="link-icon" width="20" height="20">
+                      <svg class="social-list__icon" width="20" height="20">
                         <use
                           href="./images/icon/sprite.svg#icon-linkedin"
                         ></use>
@@ -494,7 +502,7 @@
       <!-- CLIENTS -->
       <section class="section">
         <div class="container">
-          <h2 class="section-title">Постоянные клиенты</h2>
+          <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="clients__list flex">
             <li class="clients__list-item">
               <a
@@ -502,7 +510,7 @@
                 aria-label="ссылка на профиль компании"
                 href="#"
               >
-                <svg class="clients-icon" width="44" height="49">
+                <svg class="clients__icon" width="44" height="49">
                   <use href="./images/icon/sprite.svg#icon-logo-1"></use>
                 </svg>
               </a>
@@ -514,7 +522,7 @@
                 aria-label="ссылка на профиль компании"
                 href="#"
               >
-                <svg class="clients-icon" width="40" height="52">
+                <svg class="clients__icon" width="40" height="52">
                   <use href="./images/icon/sprite.svg#icon-logo-2"></use>
                 </svg>
               </a>
@@ -526,7 +534,7 @@
                 aria-label="ссылка на профиль компании"
                 href="#"
               >
-                <svg class="clients-icon" width="41" height="42">
+                <svg class="clients__icon" width="41" height="42">
                   <use href="./images/icon/sprite.svg#icon-logo-3"></use>
                 </svg>
               </a>
@@ -538,7 +546,7 @@
                 aria-label="ссылка на профиль компании"
                 href="#"
               >
-                <svg class="clients-icon" width="80" height="42">
+                <svg class="clients__icon" width="80" height="42">
                   <use href="./images/icon/sprite.svg#icon-logo-4"></use>
                 </svg>
               </a>
@@ -550,7 +558,7 @@
                 aria-label="ссылка на профиль компании"
                 href="#"
               >
-                <svg class="clients-icon" width="59" height="47">
+                <svg class="clients__icon" width="59" height="47">
                   <use href="./images/icon/sprite.svg#icon-logo-5"></use>
                 </svg>
               </a>
@@ -562,7 +570,7 @@
                 aria-label="ссылка на профиль компании"
                 href="#"
               >
-                <svg class="clients-icon" width="88" height="45">
+                <svg class="clients__icon" width="88" height="45">
                   <use href="./images/icon/sprite.svg#icon-logo-6"></use>
                 </svg>
               </a>
@@ -575,27 +583,26 @@
 
     <!-- ======= FOOTER ======= -->
     <footer class="footer">
-      <div class="container">
+      <div class="container footer--container">
         <div>
-          <a class="logo" href="./index.html">
-            <h3 class="logo-title dark-theme">
-              <span class="logo-element">Web</span>Studio
-            </h3>
-          </a>
+          <h2 class="logo">
+            <a href="#"><span class="logo__element">Web</span>Studio</a>
+          </h2>
+
           <address class="address">
-            <ul class="address__social-list">
-              <li class="address__social-list-item">
+            <ul class="address__list">
+              <li class="address__list-item">
                 <p>г. Киев, пр-т Леси Украинки, 26</p>
               </li>
 
-              <li class="address__social-list-item">
-                <a class="social__list-link" href="mailto:info@example.com"
+              <li class="address__list-item">
+                <a class="address__list-link" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
 
-              <li class="address__social-list-item">
-                <a class="social__list-link" href="tel:+380961111111"
+              <li class="address__list-item">
+                <a class="address__list-link" href="tel:+380961111111"
                   >+38 099 111 11 11</a
                 >
               </li>
@@ -605,51 +612,53 @@
 
         <div class="footer__social">
           <b>присоединяйтесь</b>
-          <ul class="footer__social-list flex">
-            <li class="footer__social-item">
+          <ul class="social-list flex">
+            <li class="social-list__item">
               <a
-                class="footer__social-link flex"
+                class="social-list__link flex footer--link"
                 href="https://www.instagram.com/"
                 aria-label="ссылка на профиль instagram"
               >
-                <svg class="footer__social-link-icon" width="20" height="20">
+                <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/icon/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-
-            <li class="footer__social-item">
+            <!-- twitter -->
+            <li class="social-list__item">
               <a
-                class="footer__social-link flex"
-                href="https://twitter.com/"
+                class="social-list__link flex footer--link"
+                href="https://www.twitter.com/"
                 aria-label="ссылка на профиль twitter"
               >
-                <svg class="footer__social-link-icon" width="20" height="20">
-                  <use href="./images/icon/sprite.svg#icon-twitter"></use></svg
-              ></a>
+                <svg class="social-list__icon" width="20" height="20">
+                  <use href="./images/icon/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-
-            <li class="footer__social-item">
+            <!-- facebook -->
+            <li class="social-list__item">
               <a
-                class="footer__social-link flex"
+                class="social-list__link flex footer--link"
                 href="https://www.facebook.com/"
                 aria-label="ссылка на профиль facebook"
               >
-                <svg class="footer__social-link-icon" width="20" height="20">
+                <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/icon/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-
-            <li class="footer__social-item">
+            <!-- linkedin -->
+            <li class="social-list__item">
               <a
-                class="footer__social-link flex"
-                href="https://ru.linkedin.com/"
+                class="social-list__link flex footer--link"
+                href="https://www.linkedin.com/"
                 aria-label="ссылка на профиль linkedin"
               >
-                <svg class="footer__social-link-icon" width="20" height="20">
-                  <use href="./images/icon/sprite.svg#icon-linkedin"></use></svg
-              ></a>
+                <svg class="social-list__icon" width="20" height="20">
+                  <use href="./images/icon/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>

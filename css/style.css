@@ -69,8 +69,7 @@
   margin-right: calc(var(--primary-margin) * -1);
 }
 
-.advantages__list-item,
-.masters__list-item {
+.advantages__list-item {
   flex-basis: calc(100% / 4 - 30px);
   margin-right: var(--primary-margin);
 }
@@ -103,7 +102,7 @@
 /* ========== END ADVANTAGES ========== */
 
 /* ========== TEAM WORK ========== */
-.section-title {
+.section__title {
   margin-bottom: 50px;
 
   color: var(--primary-text-color);
@@ -124,7 +123,7 @@
   margin-right: var(--primary-margin);
 }
 
-.works__list-des {
+.type__product-meta {
   position: absolute;
   width: 100%;
   height: 70px;
@@ -148,16 +147,20 @@
 /* ========== END TEAM WORK ========== */
 
 /* ========== MASTERS ========== */
-.masters {
+.teams {
   background-color: var(--secondary-bg-color);
 }
 
-.masters__list {
+.team-members__card-set {
   margin-right: calc(var(--primary-margin) * -1);
 }
 
-.masters__list-item {
+.team-members__card-item {
+  flex-basis: calc(100% / 4 - 30px);
+
+  margin-right: var(--primary-margin);
   padding-bottom: var(--primary-margin);
+
   text-align: center;
 
   background: var(--primary-bg-color);
@@ -165,46 +168,23 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.masters__list-wrapper {
+.team-members__card-meta {
   margin-top: var(--primary-margin);
   padding-right: 32px;
   padding-left: 32px;
 }
 
-.masters__list-name {
+.team-members__card-name {
   margin-bottom: 10px;
 }
 
-.masters__list-position {
+.team-members__card-position {
   color: var(--content-text-color);
 }
 
-.masters__list-social {
-  margin-top: 16px;
-  justify-content: space-between;
-}
-
-.masters__social-link {
-  width: 44px;
-  height: 44px;
-
-  border-radius: 50%;
+.team-members--link {
   color: #afb1b8;
-
-  transition: color 250ms var(--type-animation),
-    background-color 250ms var(--type-animation);
 }
-
-.link-icon {
-  fill: currentColor;
-}
-
-.masters__social-link:hover,
-.masters__social-link:focus {
-  color: var(--secondary-text-color);
-  background-color: var(--accent-color-text);
-}
-
 /* ========== END MASTERS ========== */
 
 /* ========== CLIENTS ==========  */
@@ -227,7 +207,7 @@
     color 250ms var(--type-animation);
 }
 
-.clients-icon {
+.clients__icon {
   fill: currentColor;
 }
 
